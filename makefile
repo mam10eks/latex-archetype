@@ -19,6 +19,6 @@ bibtex:
 	cd ..
 
 init-as-fresh-git-repository:
-	rm -Rf .git .gitmodules &&\
+	rm -Rf .git .gitmodules src/common &&\
 	git init &&\
 	git submodule add git@github.com:mam10eks/common-latex.git src/common
