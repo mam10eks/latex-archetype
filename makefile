@@ -18,6 +18,7 @@ bibtex:
 	pdflatex -output-directory=../output document.tex &&\
 	cd ..
 
-strip-git: compile
+init-as-fresh-git-repository:
 	rm -Rf .git &&\
-	git init
+	git init &&\
+	git submodule add git@github.com:mam10eks/common-latex.git src/common

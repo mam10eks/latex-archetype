@@ -9,12 +9,10 @@ Used as starter in other latex-documents.
 
 - Clone this repository
   - `git clone https://github.com/mam10eks/latex-archetype.git`
-- Remove git history
-  - `make strip-git`
-- Compile latex documents using a simple command
-  - `make`
-- View the compiled latex document in `output/document.pdf`
-- Have fun
+- Remove old git history and create new initial git repository
+  - `make init-as-fresh-git-repository`
+- Remove this Start Section
+- Have fun :)
 
 ## Usage
 
