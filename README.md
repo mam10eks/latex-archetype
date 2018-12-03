@@ -18,7 +18,29 @@ Used as starter in other latex-documents.
 - Remove this Start Section
 - Have fun :)
 
-## Usage
+## Usage (Bare Metal)
 
 Run `make` to compile the document.
 See the result in [output/document.pdf](output/document.pdf)
+
+## Usage ([Visual Studio Code](https://code.visualstudio.com/) with [Latex-Workshop-Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop))
+
+Use the following settings.json:
+```
+{
+    "latex-workshop.latex.outputDir": "../output",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "make",
+            "command": "make",
+            "args": ["-C", "%DIR%/.."]
+        },
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "make",
+            "tools": ["make"]
+        },
+    ]
+}
+```
