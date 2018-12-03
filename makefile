@@ -1,6 +1,6 @@
 compile: clean checkout-submodules bibtex
 	cd src &&\
-	pdflatex -output-directory=../output document.tex
+	pdflatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=../output document.tex
 
 clean:
 	rm -Rf output && mkdir output
@@ -11,11 +11,11 @@ checkout-submodules:
 bibtex:
 	cd src &&\
 	cp literature.bib ../output/ &&\
-	pdflatex -output-directory=../output document.tex &&\
+	pdflatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=../output document.tex &&\
 	cd ../output &&\
 	bibtex document &&\
 	cd ../src &&\
-	pdflatex -output-directory=../output document.tex &&\
+	pdflatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=../output document.tex &&\
 	cd ..
 
 init-as-fresh-git-repository:
