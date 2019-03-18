@@ -25,7 +25,7 @@ See the result in [output/document.pdf](output/document.pdf)
 
 ## Usage ([Visual Studio Code](https://code.visualstudio.com/) with [Latex-Workshop-Extension](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop))
 
-Use the following settings.json:
+Use the following settings.json (The workspace setting file is located under the .vscode folder in your root folder):
 ```
 {
     "latex-workshop.latex.outputDir": "../output",
